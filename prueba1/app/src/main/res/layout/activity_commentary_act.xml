@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="-106dp">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinn"
             android:layout_width="313dp"
             android:layout_height="53dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
             app:layout_constraintVertical_bias="0.084" />
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/RatingBar"
             android:layout_width="237dp"
             android:layout_height="51dp"
             android:layout_marginBottom="352dp"
@@ -38,19 +38,20 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="313dp"
             android:layout_height="54dp"
-            app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+            app:layout_constraintBottom_toTopOf="@+id/RatingBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintTop_toBottomOf="@+id/spinn" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/Calificar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="Calificar"
             android:text="calificar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+            app:layout_constraintTop_toBottomOf="@+id/RatingBar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

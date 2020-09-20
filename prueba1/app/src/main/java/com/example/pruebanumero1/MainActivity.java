@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
         user = userId.getText().toString();
         pass = passwordId.getText().toString();
 
-        if (user.equals("android") && pass.equals("123"))
+        if (user.equalsIgnoreCase("android") && pass.equals("123"))
         {
             Intent botonInicio = new Intent(this,menu_act.class);
             startActivity(botonInicio);

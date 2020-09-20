@@ -20,10 +20,10 @@
         app:srcCompat="@drawable/clientes" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinn"
         android:layout_width="300dp"
         android:layout_height="57dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintBottom_toTopOf="@+id/ingresarProducto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,39 +31,41 @@
         app:layout_constraintVertical_bias="0.54" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/ingresarProducto"
         android:layout_width="299dp"
         android:layout_height="46dp"
         android:layout_marginBottom="308dp"
         android:ems="10"
+        android:hint="Ingrese producto"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="118dp"
+        android:id="@+id/saldoFinal"
+        android:layout_width="297dp"
         android:layout_height="31dp"
         android:text="Saldo Final :"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintTop_toBottomOf="@+id/ingresarProducto"
+        app:layout_constraintVertical_bias="0.209" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calcular"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintTop_toBottomOf="@+id/saldoFinal"
+        app:layout_constraintVertical_bias="0.21" />
 </androidx.constraintlayout.widget.ConstraintLayout>
